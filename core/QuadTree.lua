@@ -43,7 +43,7 @@ cc.exports.isIn = isIn
 function M:ctor(entityLst)
 	self.__root = clsQTreeNode.new(cc.rect(0 , 0 , display.width , display.height) , nil , 0)
 
-	self.__entityLst = __entityLst or {}
+	self.__entityLst = entityLst or {}
 
 	self.__depth = 4
 
